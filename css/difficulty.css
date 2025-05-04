@@ -1,0 +1,99 @@
+/* Reset و تنظیمات پایه */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f7fa;
+    color: #2c3e50;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* عنوان صفحه */
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #3498db;
+    font-weight: 600;
+  }
+  
+  /* دکمه‌های سطح دشواری */
+  .level {
+    display: block;
+    width: 200px;
+    padding: 15px;
+    margin: 15px auto;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .level:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* رنگ‌بندی دکمه‌ها بر اساس سطح دشواری */
+  .level:nth-child(1) {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  .level:nth-child(2) {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .level:nth-child(3) {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  /* لینک بازگشت به خانه */
+  a {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 10px 20px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  /* ریسپانسیو برای موبایل */
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+    
+    .level {
+      width: 160px;
+      padding: 12px;
+      font-size: 1rem;
+    }
+    
+    a {
+      margin-top: 30px;
+    }
+  }
